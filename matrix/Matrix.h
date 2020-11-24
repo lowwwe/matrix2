@@ -40,10 +40,10 @@ struct Matrix
 	bool operator == (Matrix t_right);
 	bool operator != (Matrix t_right);
 
-	Matrix randomIntPositive(int t_max);
-	Matrix randomInt(int t_max);
-	Matrix randomFloatPositive(int t_max);
-	Matrix randomFloat(int t_max);
+	static Matrix randomIntPositive(int t_max);
+	static Matrix randomInt(int t_max);
+	static Matrix randomFloatPositive(int t_max);
+	static Matrix randomFloat(int t_max);
 
 	Matrix getTranspose() const;
 	void transpose();
