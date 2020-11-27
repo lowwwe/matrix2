@@ -10,6 +10,8 @@
 
 #include "Matrix.h"
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 
 void testConstructor();
@@ -23,9 +25,11 @@ void testScalarMultiplication();
 /// <returns></returns>
 int main()
 {
+	int mainPete = 4;
+	testSubtraction();
 	testConstructor();
 	testAddition();
-	testSubtraction();
+	
 	testScalarMultiplication();
 	std::system("pause");
 	return 1;
@@ -68,7 +72,7 @@ void testAddition()
 	{
 		std::cout << "so far so good addition 1" << std::endl;
 	}
-	Matrix matrixC { 5.0f, 5.0f,3.0f,
+	Matrix matrixC {9.0f, 5.0f,3.0f,
 				0.0f, 4.0f,3.0f,
 				4.0f, -2.0f,6.0f };
 	matrixA = matrixC + matrixB;
